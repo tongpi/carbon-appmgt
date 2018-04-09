@@ -47,7 +47,7 @@ var render = function(theme, data, meta, require) {
             if (data.data.meta.shortName == 'mobileapp') {
                 listPartial = 'add-mobileapp';
             }
-            heading = "Create New Mobile App";
+            heading = "创建新移动应用";
             break;
         case 'view':
             listPartial = 'view-mobileapp';

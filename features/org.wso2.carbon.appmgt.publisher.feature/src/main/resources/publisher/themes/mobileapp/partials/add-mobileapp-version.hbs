@@ -125,18 +125,18 @@
                             <div class="col-sm-5">
                                 <input type="text" id="txtPackageName" name="overview.packagename"
                                        class="form-control"
-                                       placeholder="eg: com.companyname.applicationname" />
+                                       placeholder="例如: com.companyname.applicationname" />
                             </div>
                         {{/ifCond}}
                         {{#ifCond artifact.attributes.overview_platform "==" "ios"}}
                             <label class="control-label col-sm-2" for="txtPackageName">
-                                App Identifier <span style="color:#FF0000">*</span>
+                               应用标识符 <span style="color:#FF0000">*</span>
                             </label>
 
                             <div class="col-sm-10 inner-addon">
                                 <input type="text" id="txtAppIdentifier" name="overview.appid"
                                        class="form-control"
-                                       placeholder="eg: 420009108" />
+                                       placeholder="例如: 420009108" />
                             </div>
                         {{/ifCond}}
                     {{/ifCond}}
@@ -146,7 +146,7 @@
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-2">
                     <a href="#" id="btn-next" class="btn btn-primary" aria-hidden="true">
-                        Continue
+                        继续
                     </a>
                 </div>
             </div>
@@ -185,7 +185,7 @@
 
             <div class="form-group">
                 <label class="control-label col-sm-2" for="txtDisplayName">
-                    Display Name <span style="color:#FF0000">*</span>
+                    显示名称 <span style="color:#FF0000">*</span>
                 </label>
                 <div class="col-sm-4">
                     <input type="text" id="txtDisplayName" name="overview.displayName"
@@ -195,33 +195,33 @@
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="txtDescription">
-                    Description <span style="color:#FF0000">*</span><br>
-                    <small>(Max. 1000 characters)</small>
+                    描述 <span style="color:#FF0000">*</span><br>
+                    <small>(最多1000 个字符)</small>
                 </label>
                 <div class="col-sm-8">
 					<textarea id="txtDescription" name="overview.description"
                               class="form-control" maxlength="1000" rows="10"
-                              placeholder="Enter description of the app. less than 1000 characters"
+                              placeholder="输入少于1000个字符的应用描述"
                               title="Enter description of the app. less than 1000 characters."
                             >{{artifact.attributes.overview_description}}</textarea>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="txtRecentChanges">
-                    Recent Changes <br>
-                    <small>(Max. 700 characters)</small>
+                    最近的改变 <br>
+                    <small>(最多700个字符)</small>
                 </label>
                 <div class="col-sm-8">
 					<textarea id="txtRecentChanges" name="overview.recentchanges"
                               class="form-control" maxlength="700" rows="8"
-                              placeholder="Enter recent changes you have done to the app. less than 700 characters."
+                              placeholder="输入您对应用程序所做的最近更改。 少于700个字符。"
                               title="Enter recent changes you have done to the app. less than 700 characters."
                             >{{artifact.attributes.overview_recentchanges}}</textarea>
                 </div>
             </div>
             <div id="control-packagename" class="form-group">
                 <label class="control-label col-sm-2" for="txtVersion">
-                    Version  <span style="color:#FF0000">*</span><br>
+                    版本 <span style="color:#FF0000">*</span><br>
                 </label>
                 <div class="col-sm-2">
                     <input type="text" id="txtVersion" name="overview.version"
