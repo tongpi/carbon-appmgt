@@ -54,7 +54,7 @@ its own partion sinceit does not support tags--}}
                 <li class="green {{#if active}}active{{/if}}">
                     <a id="my-apps-link" href="{{tenantedUrl this.url}}">
                         <i class="fw fw-mobile icon"></i>
-                        <span class="left-menu-item"> {{t "Mobile Apps"}}
+                        <span class="left-menu-item"> {{t "移动应用"}}
                             {{#if myappsUrl}}<i class="fw fw-up"></i>{{/if}}
                         </span>
                     </a>
@@ -78,7 +78,7 @@ its own partion sinceit does not support tags--}}
 
 {{!-- left-column - tags --}}
 <div class="add-margin-top-3x hidden-xs hidden-sm" style="{{#if hideTag}}display: none{{/if}}">
-    <div class="section-title"> {{t "Tags"}}</div>
+    <div class="section-title"> {{t "标签"}}</div>
     {{#if tags}}
         <ul class="tags">
             {{#each tags.data.allTags}}
