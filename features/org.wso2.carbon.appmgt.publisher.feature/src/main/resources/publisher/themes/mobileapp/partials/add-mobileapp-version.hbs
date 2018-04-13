@@ -1,21 +1,21 @@
 <ul id="newMobileAppWizard" class="nav nav-pills nav-wizard">
     <li id="wizard-step-1-nav" class="active">
         <a id="wizard-step-1-link" href="#">
-            Upload application/provide URL
+            上传应用/提供 URL
         </a>
         <div class="nav-arrow"></div>
     </li>
     <li id="wizard-step-2-nav">
         <div class="nav-wedge"></div>
         <a id="wizard-step-2-link" href="#">
-            Give application details
+            列出应用详情
         </a>
         <div class="nav-arrow"></div>
     </li>
 </ul>
 
 <div id="file-upload-progress-wrapper" style="display: none;">
-    <h4>Uploading...</h4>
+    <h4>上传中...</h4>
     <div id="file-upload-progressbar-wrapper" class="progress" style="height: 15px;">
         <div id="file-upload-progressbar" class="progress-bar" role="progressbar"
              aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="width: 0;">
@@ -26,7 +26,7 @@
 <div id="file-upload-success-msg" style="display: none;">
     <div class="alert alert-info container col-md-11">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <h4>App uploaded successfully.</h4>
+        <h4>应用已经成功上传.</h4>
     </div>
 </div>
 
@@ -36,7 +36,7 @@
 
             <div class="form-group">
                 <label class="control-label col-sm-2" for="txtPlatform">
-                    Platform
+                    平台
                 </label>
                 <div class="col-sm-2">
                     {{#with artifact.attributes.overview_platform}}
@@ -57,7 +57,7 @@
                 <!-- android, iOS -->
                 <div id="market-type-block" class="form-group">
                     <label class="control-label col-sm-2" for="txtStoreType">
-                        Store Type
+                        商店类型
                     </label>
                     <div class="col-sm-2">
                         {{#with artifact.attributes.overview_type}}
@@ -65,8 +65,8 @@
                                     class="form-control"
                                     disabled="disabled">
                                 <option value="{{this}}" selected="selected">
-                                    {{#ifCond this "==" "enterprise"}}Enterprise{{/ifCond}}
-                                    {{#ifCond this "==" "public"}}Public{{/ifCond}}
+                                    {{#ifCond this "==" "enterprise"}}企业版{{/ifCond}}
+                                    {{#ifCond this "==" "public"}}公开版{{/ifCond}}
                                 </option>
                             </select>
                         {{/with}}
@@ -83,7 +83,7 @@
                         <input type="text" id="txtWebappUrl" name="overview.url"
                                value="{{artifact.attributes.overview_url}}"
                                class="form-control"
-                               placeholder="eg: http://mobile.com/webapp" />
+                               placeholder="例如: http://mobile.com/webapp" />
                     </div>
                 {{else}}
                     <!-- android, iOS -->
@@ -97,10 +97,10 @@
                                     <div class="btn btn-default btn-file fileupload-app-btn">
                                         <div class="fileupload-new">
                                             {{#ifCond this "==" "android"}}
-                                                Choose .APK File
+                                                选择 .APK 文件
                                             {{/ifCond}}
                                             {{#ifCond this "==" "ios"}}
-                                                Choose .IPA File
+                                                选择 .IPA 文件
                                             {{/ifCond}}
                                         </div>
                                         <div class="fileupload-exists">
@@ -119,7 +119,7 @@
                     {{#ifCond artifact.attributes.overview_type "==" "public"}}
                         {{#ifCond artifact.attributes.overview_platform "==" "android"}}
                             <label class="control-label col-sm-2" for="txtPackageName">
-                                Package Name <span style="color:#FF0000">*</span>
+                                包名称 <span style="color:#FF0000">*</span>
                             </label>
 
                             <div class="col-sm-5">
@@ -196,7 +196,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="txtDescription">
                     描述 <span style="color:#FF0000">*</span><br>
-                    <small>(最多1000 个字符)</small>
+                    <small>(最多1000个字符)</small>
                 </label>
                 <div class="col-sm-8">
 					<textarea id="txtDescription" name="overview.description"
@@ -230,7 +230,7 @@
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="imgBanner">
-                    Banner <span style="color:#FF0000">*</span><br>
+                    横幅 <span style="color:#FF0000">*</span><br>
                     <small>(705px * 344px, .png)</small>
                 </label>
 
@@ -261,7 +261,7 @@
 
             <div class="form-group">
                 <label class="control-label col-sm-2">
-                    Screen Shots <span style="color:#FF0000">*</span><br>
+                    屏幕快照 <span style="color:#FF0000">*</span><br>
                     <small>(288px * 512px, .png)</small>
                 </label>
                 <div id="screenshots-wrapper" class="col-sm-10">
@@ -296,7 +296,7 @@
 
             <div class="form-group">
                 <label class="control-label col-sm-2" for="imgThumbnail">
-                    Icon file <span style="color:#FF0000">*</span>
+                    图标文件 <span style="color:#FF0000">*</span>
                 </label>
                 <div class="col-sm-10">
                     {{#with artifact.attributes.images_thumbnail}}
@@ -327,7 +327,7 @@
                 <div class="col-sm-10 col-sm-offset-2">
                     <input type="submit" id="btnCreateNewVersion" value="Create New Version"
                            class="btn btn-primary" />
-                    <a href="{{url "/assets/mobileapp/"}}" class="btn btn-mob-cancel">Cancel</a>
+                    <a href="{{url "/assets/mobileapp/"}}" class="btn btn-mob-cancel">取消</a>
                 </div>
             </div>
 
@@ -344,13 +344,13 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     &times;
                 </button>
-                <h4 class="modal-title">Modal title</h4>
+                <h4 class="modal-title">模态标题</h4>
             </div>
-            <div class="modal-body">Modal body</div>
+            <div class="modal-body">模态主体</div>
             <div class="modal-footer">
                 <button type="button" id="message-modal-button" class="btn btn-default"
                         data-dismiss="modal">
-                    Close
+                   关闭
                 </button>
             </div>
         </div>
