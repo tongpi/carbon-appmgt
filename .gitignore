@@ -229,6 +229,19 @@ pip-log.txt
 #Ignore Targets
 target/
 
+
+
+
+#################
+## Visual Studio
+#################
+.vscode/
+
+
+
+
+
+
 #############
 ## Appmgt
 #############

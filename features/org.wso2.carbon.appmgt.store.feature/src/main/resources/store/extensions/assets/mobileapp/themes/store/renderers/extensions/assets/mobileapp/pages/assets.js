@@ -58,7 +58,7 @@ var render = function (theme, data, meta, require) {
             {
                 partial: 'page-header',
                 context: {
-                    title: "Mobile Apps",
+                    title: "移动应用",
                     sorting: createSortOptions(data)
                 }
             }
@@ -77,9 +77,9 @@ var render = function (theme, data, meta, require) {
 function createSortOptions(data) {
     var url = "/assets/mobileapp?sort=";
     var sortOptions = {};
-    var sortByPopularity = {url: url + "popular", title: "Sort by Popularity", class: "fw fw-star"};
-    var sortByAlphabet = {url: url + "az", title: "Sort by Alphabetical Order", class: "fw fw-list-sort"};
-    var sortByRecent = {url: url + "recent", title: "Sort by Recent", class: "fw fw-calendar"};
+    var sortByPopularity = {url: url + "popular", title: "按人气排序", class: "fw fw-star"};
+    var sortByAlphabet = {url: url + "az", title: "按字母顺序排序", class: "fw fw-list-sort"};
+    var sortByRecent = {url: url + "recent", title: "按近期排序", class: "fw fw-calendar"};
 
     var options = [];
     options.push(sortByAlphabet);

@@ -41,7 +41,7 @@ var render = function (theme, data, meta, require) {
             {
                 partial: 'page-header',
                 context: {
-                    title: "Recent Apps"
+                    title: "最近的应用程序"
                 }
             }
         ],
