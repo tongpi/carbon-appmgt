@@ -906,6 +906,7 @@
       <swagger-jaxrs.version>1.5.2</swagger-jaxrs.version>
 
   </properties>
+  
   <distributionManagement>
     <repository>
         <id>releases</id>
@@ -918,4 +919,5 @@
         <url>http://192.168.200.69:8081/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
+
 </project>
