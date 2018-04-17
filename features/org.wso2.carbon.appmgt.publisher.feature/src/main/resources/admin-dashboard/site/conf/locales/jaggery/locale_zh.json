@@ -1,0 +1,51 @@
+{
+
+    "all":"全部",
+    "tasks":"工作流程",
+
+    "user":"用户",
+    "subscriptions":"订阅 ",
+    "myTasks":"批准任务",
+    "subscriptionCreation": "待处理订阅",
+    "userCreation": "等待用户创建",
+    "appCreation": "应用程序创建",
+    "appPublishHeader": "待发布的应用程序",
+    "addEntitlementPolicyHeader" : "添加授权策略",
+
+    "username": "用户名",
+    "password": "密码",
+    "login": "登录",
+    "logged": "登录为",
+    "logout": "注销",
+    "cancel":"取消",
+    "reset":"重置",
+
+
+    "noTasksMsg":"没有分配给登录用户的待处理任务。",
+	"noBPSConnectivity" : "没有与BPS的连接。",
+
+
+    "copyright": "&copy; 版权 2011 &ndash; 2013 版权所有。",
+    "gettingStarted":"入门",
+    "gettingStartedGuide":"入门指南（PDF）",
+    "installationGuide":"安装指南",
+    "quickStartGuide":"快速入门指南",
+    "samplesLink":"样品",
+    "share":"分享",
+    "documentationSupport":"文档/支持",
+    "productDocumentation":"产品文档",
+    "getSupport":"获得支持",
+    "productHome":"产品主页",
+    "resourcesLink":"资源",
+    "apiMgrGuide":"WSO2 API管理实用指南",
+    "useCase1":"WSO2使用案例：API Facade模式",
+    "more":"更多 >>",
+    "customTheme" : "自定义主题",
+    "themeUpload": "上传新的自定义主题",
+    "themeList": "部署的自定义主题",
+    "default" : "默认",
+    "webapp" : "网络应用",
+    "mobileapp": "移动应用",
+    "site" : "位置"
+
+}
