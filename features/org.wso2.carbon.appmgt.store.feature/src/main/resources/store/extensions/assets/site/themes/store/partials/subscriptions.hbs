@@ -20,7 +20,7 @@
 
                     <div class="my-apps-actions">
                         <a class="btn btn-info asset-myapps-btn"  href="{{tenantedUrl "/assets/site"}}/{{uuid}}">
-                            <i class="icon-mobile-phone"></i> View App
+                            <i class="icon-mobile-phone"></i> 浏览应用
                         </a>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
     {{else}}
 
         <div class="well-large col-md-12 no-apps-box">
-            Sorry! You do not have any subscribed web apps.
+            抱歉! 你没有任何订阅的网络应用程序。
         </div>
 
     {{/if}}
@@ -41,7 +41,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Install {{ asset.attributes.overview_displayName}}</h4>
+                <h4 class="modal-title">安装 {{ asset.attributes.overview_displayName}}</h4>
             </div>
             <div class="modal-body">
 
@@ -67,10 +67,10 @@
     <div class="row">
     <ul class="pager">
         {{#if leftNav}}
-            <li><a href="{{tenantedUrl "/extensions/assets/site/subscriptions?"}}{{t "page="}}{{this.leftNav}}">Previous</a></li>
+            <li><a href="{{tenantedUrl "/extensions/assets/site/subscriptions?"}}{{t "page="}}{{this.leftNav}}">前一页</a></li>
         {{/if}}
         {{#if rightNav}}
-            <li><a  href="{{tenantedUrl "/extensions/assets/site/subscriptions?"}}{{t "page="}}{{this.rightNav}}">Next</a></li>
+            <li><a  href="{{tenantedUrl "/extensions/assets/site/subscriptions?"}}{{t "page="}}{{this.rightNav}}">下一页</a></li>
         </ul>
         {{/if}}
     </div>

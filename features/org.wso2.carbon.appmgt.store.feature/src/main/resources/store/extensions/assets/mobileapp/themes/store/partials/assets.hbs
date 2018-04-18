@@ -6,7 +6,7 @@
 
     <div class="type-{{attributes.overview_platform}} col-xs-6 col-md-3 col-lg-1-5 app-assets-wrapper">
         {{#if indashboard}}
-            <div class="ribbon-wrapper-green"><div class="ribbon-green">Installed</div></div>
+            <div class="ribbon-wrapper-green"><div class="ribbon-green">安装</div></div>
         {{/if}}
         <div class="app-assets">
             <a href="{{tenantedUrl "/assets"}}/{{type}}/{{id}}">
@@ -38,7 +38,7 @@
     {{else}}
 
     <div class="well-large col-md-12 no-apps-box">
-        <i class="fw fw-paste nothing-icon"></i> Sorry, We could not find any app for you
+        <i class="fw fw-paste nothing-icon"></i> 对不起，我们找不到你要的任何应用程序
     </div>
 
 {{/if}}
@@ -49,10 +49,10 @@
     <div class="row">
         <ul class="pager">
         {{#if leftNav}}
-            <li><a href="{{tenantedUrl "/assets/webapp?page="}}{{this.leftNav}}">Previous</a></li>
+            <li><a href="{{tenantedUrl "/assets/webapp?page="}}{{this.leftNav}}">前一页</a></li>
         {{/if}}
         {{#if rightNav}}
-            <li><a  href="{{tenantedUrl "/assets/webapp?page="}}{{this.rightNav}}">Next</a></li>
+            <li><a  href="{{tenantedUrl "/assets/webapp?page="}}{{this.rightNav}}">下一页</a></li>
          </ul>
         {{/if}}
     </div>
