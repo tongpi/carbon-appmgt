@@ -81,8 +81,8 @@ if($('#isEnterpriseInstallEnabled').val() === 'true'){
             "sInfoThousands": ",",
             "oPaginate": {
                 "sFirst": "首页",
-                "sPrevious": "上页",
-                "sNext": "下页",
+                "sPrevious": "上一页",
+                "sNext": "下一页",
                 "sLast": "末页"
             },
             "oAria": {
