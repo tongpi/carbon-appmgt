@@ -16,7 +16,7 @@
 
 /*========== HEADER ==========*/
 header {
-    background: #1F1F1F;
+    background: #2d313a;
 }
 
 header .header-action {
@@ -48,7 +48,7 @@ header .header-action:active {
 /**/
 /*=========== nav CLASS ========*/
 .actions-bar {
-    background: #2c313b;
+    background: #393d46;
 }
 
 .actions-bar .navbar-nav > li a {
@@ -66,7 +66,7 @@ header .header-action:active {
 .actions-bar .navbar-nav > .active > a:hover,
 .actions-bar .navbar-nav > .active > a:focus,
 .actions-bar .navbar-nav > .active > a:active {
-    background: #4d5461;
+    background: #1e252d;
     color: #ffffff;
 }
 
@@ -106,7 +106,7 @@ header .header-action:active {
     min-height: 40px;
     border: none;
     margin: 0;
-    background-color: #004079;
+    background-color: #1e252d;
     color: #ffffff;
 }
 
@@ -152,7 +152,7 @@ header .header-action:active {
     padding-left: 10px;
 }
 .search-box .search-by, .search-box .search-by-dropdown {
-    background-color: #002760 !important;
+    background-color: #1e252d !important;
     color: #fff !important;
 }
 
@@ -182,7 +182,7 @@ header .header-action:active {
     float: right;
     z-index: 1000;
     margin: 0 15px 0 15px;
-    background-color: #002760;
+    background-color: #1e252d;
     color: #fff;
 }
 
