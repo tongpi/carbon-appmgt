@@ -40,16 +40,16 @@ body {
     height: auto !important;
     height: 100%;
     /* Negative indent footer by it's height */
-    margin: 0 auto -60px;
+    margin: 0 auto -40px;
 }
 
 /* Set the fixed height of the footer here */
 #push,
 #footer {
-    height: 60px;
+    height: 40px;
 }
 #footer {
-    background-color: #f5f5f5;
+    background-color: #2d313a;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
@@ -1018,11 +1018,14 @@ span.title {
 }
 
 .container-header{
-    background: #252525;
+    background: #2d313a;
     height: 60px;
     border: none;
     border-radius: 0;
     border-bottom: solid 1px #000;
+}
+.container{
+    width:100%;
 }
 
 #container-header .nav.menu li:last-child {
@@ -1263,8 +1266,8 @@ circle:hover {
 }
 .row-footer {
    
-    padding: 15px 0;
-    color: #7f8c8d;
+    padding: 0;
+    color: #cbcbcb;
     font-size: 14px;
     line-height: 27px;
 }
@@ -1420,7 +1423,10 @@ h2.first-h2{
     background: transparent url(../img/poweredby.png) no-repeat left top;
 }
 .row-footer{
-    padding-top: 10px;
+    padding-top: 0px;
+}
+.row-footer p{
+    margin:8px 0 0;
 }
 .nav-pills > li > a{
     background: #efefef;

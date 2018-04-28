@@ -39,8 +39,8 @@
 
 
 .section-title {
-    background-color: #444444;
-    border: 1px solid #444444;
+    background-color: #474f5a;
+    border: 1px solid #474f5a;
     height: 40px;
     padding-top: 5px;
     width: 200px;
@@ -134,7 +134,7 @@
 }
 
 nav.navigation > ul{
-    background: #525252;
+    background: #474f5a;
     color: #fff;
     position: relative;
     -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
@@ -256,19 +256,23 @@ nav.navigation ul > li.home.active > .left-menu-item {
 }
 
 nav.navigation ul > li.green .icon {
-    background: #27ae60;
+    background: #02c2c5;
     color: white;
 }
 
 nav.navigation ul > li.green:hover > .icon {
-    background: #27ae60;
+    background: #00bc80;
     color: white;
 }
 
 nav.navigation ul > li.green:hover .left-menu-item, nav.navigation ul > li.green.active .left-menu-item, nav.navigation ul > li.green.hover .left-menu-item {
-    background: #27ae60;
+    background: #02c2c5;
     color: white;
 
+}
+nav.navigation ul > li.green.active .icon {
+    background: #02c2c5;
+    color: white;
 }
 
 nav.navigation ul > li.red .icon {

@@ -11,30 +11,25 @@
                 <img src="{{customThemeUrl "/libs/theme-wso2_1.0/images/logo-inverse.svg"}}" alt="apps-store"
                      title="apps-store" class="logo" />
 
-                <h1 class="display-block-xs">APP Store</h1>
+                <h1 class="display-block-xs">应用商店</h1>
             </a>
         </div>
         <div class="auth remove-margin-right pull-right float-remove-xs text-center-xs">
             {{#if user}}
-                <a href="#" class="dropdown" data-toggle="dropdown">
-                    <span class="hidden-xs add-padding-left-3x">{{user.username}}<span class="caret"></span></span>
-                    <span class="icon fw-stack fw-lg"><i class="fw fw-user fw-stack-1x"></i></span>
-                </a>
-                <ul class="dropdown-menu float-remove-xs position-static-xs text-center-xs remove-margin-xs"
-                    role="menu">
-                    <li class="dropdown-header visible-xs">{{user.username}}<span class="caret"></span></li>
-                    <li class="divider visible-xs"></li>
-                    <li><a href="{{url "/logout"}}">{{t "Sign Out"}}</a></li>
-                </ul>
+                <span style="color:#a3abbe; padding:13px 15px; line-height:50px;">
+                    <span class="icon fw-stack"><i class="fw fw-user fw-stack-1x"></i></span>
+                    <span class="hidden-xs">欢迎您，{{user.username}}！</span>
+                </span>
+                <a href="{{url "/logout"}}"><img src="/store/themes/store/libs/theme-wso2_1.0/images/icon_logout.png" /></a>
             {{else}}
                 {{#unless hideLogin}}
                     {{#if sso}}
-                        <a href="{{tenantedUrl "/login?header=true"}}" class="header-action">
+                        <a href="{{tenantedUrl "/login?header=true"}}" class="header-action" style="color:#a3abbe;">
                             <span class="icon"><i class="glyphicon glyphicon-off add-padding-right-1x"></i></span>
                             <span class="text-uppercase">{{t "Sign In"}}</span>
                         </a>
                     {{else}}
-                        <a href="#" class="header-action" data-toggle="modal" data-target="#modal-login">
+                        <a href="#" class="header-action" data-toggle="modal" data-target="#modal-login" style="color:#a3abbe;">
                             <span class="icon"><i class="glyphicon glyphicon-off add-padding-right-1x"></i></span>
                             <span class="text-uppercase">{{t "Sign In"}}</span>
                         </a>
@@ -42,7 +37,7 @@
                     {{#if isSelfSignUpEnabledForTenant}}
                         <a href="#" class="header-action" data-toggle="modal" data-target="#register-modal">
                             <span class="icon"><i class="fw fw-sign-up add-padding-right-1x"></i></span>
-                            <span class="text-uppercase">register</span>
+                            <span class="text-uppercase">注册</span>
                         </a>
                         {{>register}}
                     {{/if}}
@@ -62,14 +57,14 @@
                         <li class="dropdown">
                             <a href="{{url "/"}}">
                                 <i class="fw fw-organization add-margin-right-1x"></i>
-                                Public Store
+                                公共商店
                             </a>
                         </li>
                     {{/if}}
 
                     <li class="{{#ifCond active "==" "store" }}active{{/ifCond}}">
                         <a id="store-link" href="{{tenantedUrl "/"}}">
-                            <span class="icon add-margin-right-1x"><i class="fw fw-organization fw-lg"></i></span>Store
+                            <span class="icon add-margin-right-1x"><i class="fw fw-organization fw-lg"></i></span>商店
                         </a>
                     </li>
 
@@ -77,7 +72,7 @@
                         {{#unless hideFavouriteMenu}}
                     <li class="{{#ifCond active "==" "favourite" }}active{{/ifCond}}">
                         <a href="{{tenantedUrl "/assets/favourite"}}">
-                            <span class="icon add-margin-right-1x"><i class="fw fw-heart fw-lg"></i></span>Favourites
+                            <span class="icon add-margin-right-1x"><i class="fw fw-heart fw-lg"></i></span>收藏夹
                         </a>
                     </li>
                         {{/unless}}

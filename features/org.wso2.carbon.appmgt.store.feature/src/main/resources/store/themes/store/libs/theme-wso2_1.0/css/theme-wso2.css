@@ -792,7 +792,7 @@ header .dropdown[aria-expanded=true], header .dropdown:hover {
 }
 
 .navbar {
-  background: #1a78d8;
+  background: #393d46;
   border: none;
   margin-bottom: 0;
   min-height: 40px;
@@ -1240,7 +1240,7 @@ footer {
   min-height: 40px;
   overflow: hidden;
   color: #cbcbcb;
-  background: #272c30;
+  background: #2d313a;
   z-index: 1000;
 }
 

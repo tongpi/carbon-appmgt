@@ -1,6 +1,6 @@
 <div class="row">
     <div class="pull-left heading" align="left">
-        <h1>Mobile Applications</h1>
+        <h1>移动应用</h1>
     </div>
 </div>
 
@@ -9,7 +9,7 @@
     <button type="button" class="close" aria-label="Close">
         <span style="font-size: 21px;" aria-hidden="true">&times;</span>
     </button>
-    <span name="message-text">message</span>
+    <span name="message-text">消息</span>
 </div>
 
 <div class="asset-being-added"></div>
@@ -22,11 +22,11 @@
             <th colspan="2" width="30%">
                 {{#ifCond sortOptions.sortBy "==" "name"}}
                     <a href="?sortby=name&sort={{sortOptions.sort}}">
-                        Name <i class="icon-caret-{{sortOptions.icon}}"></i>
+                        名称 <i class="icon-caret-{{sortOptions.icon}}"></i>
                     </a>
                 {{else}}
                     <a href="?sortby=name&sort=asc">
-                        Name <i class="icon-caret-down"></i>
+                        名称 <i class="icon-caret-down"></i>
                     </a>
                 {{/ifCond}}
             </th>
@@ -36,63 +36,63 @@
             <th>
                 {{#ifCond sortOptions.sortBy "==" "os"}}
                     <a href="?sortby=os&sort={{sortOptions.sort}}">
-                        Platform <i class="icon-caret-{{sortOptions.icon}}"></i>
+                        平台 <i class="icon-caret-{{sortOptions.icon}}"></i>
                     </a>
                 {{else}}
                     <a href="?sortby=os&sort=asc">
-                        Platform <i class="icon-caret-down"></i>
+                        平台 <i class="icon-caret-down"></i>
                     </a>
                 {{/ifCond}}
             </th>
             <th>
                 {{#ifCond sortOptions.sortBy "==" "type"}}
                     <a href="?sortby=type&sort={{sortOptions.sort}}">
-                        Type <i class="icon-caret-{{sortOptions.icon}}"></i>
+                        类型 <i class="icon-caret-{{sortOptions.icon}}"></i>
                     </a>
                 {{else}}
                     <a href="?sortby=type&sort=asc">
-                        Type <i class="icon-caret-down"></i>
+                        类型 <i class="icon-caret-down"></i>
                     </a>
                 {{/ifCond}}
             </th>
             <th>
                 {{#ifCond sortOptions.sortBy "==" "owner"}}
                     <a href="?sortby=owner&sort={{sortOptions.sort}}">
-                        Owner <i class="icon-caret-{{sortOptions.icon}}"></i>
+                        所有者 <i class="icon-caret-{{sortOptions.icon}}"></i>
                     </a>
                 {{else}}
                     <a href="?sortby=owner&sort=asc">
-                        Owner <i class="icon-caret-down"></i>
+                        所有者 <i class="icon-caret-down"></i>
                     </a>
                 {{/ifCond}}
             </th>
             <th>
                 {{#ifCond sortOptions.sortBy "==" "version"}}
                     <a href="?sortby=version&sort={{sortOptions.sort}}">
-                        Version <i class="icon-caret-{{sortOptions.icon}}"></i>
+                        版本 <i class="icon-caret-{{sortOptions.icon}}"></i>
                     </a>
                 {{else}}
                     <a href="?sortby=version&sort=asc">
-                        Version <i class="icon-caret-down"></i>
+                        版本 <i class="icon-caret-down"></i>
                     </a>
                 {{/ifCond}}
             </th>
             <th>
                 {{#ifCond sortOptions.sortBy "==" "createdtime"}}
                     <a href="?sortby=createdtime&sort={{sortOptions.sort}}">
-                        Created <i class="icon-caret-{{sortOptions.icon}}"></i>
+                        创建于 <i class="icon-caret-{{sortOptions.icon}}"></i>
                     </a>
                 {{else}}
                     <a href="?sortby=createdtime&sort=asc">
-                        Created <i class="icon-caret-down"></i>
+                        创建于 <i class="icon-caret-down"></i>
                     </a>
                 {{/ifCond}}
             </th>
             <th>
-                <a href="#">Status</a>
+                <a href="#">状态</a>
             </th>
             <th width="50%">
-                <a href="#">Actions</a>
+                <a href="#">操作</a>
             </th>
             </thead>
             <tbody>
@@ -110,7 +110,7 @@
                     <li>
                         <a href="{{url "/assets/mobileapp/?page="}}{{this.leftNav}}">
                             <span aria-hidden="true">&laquo;</span>
-                            <span class="sr-only">Previous</span>
+                            <span class="sr-only">前一个</span>
                         </a>
                     </li>
                 {{/if}}
@@ -129,7 +129,7 @@
                     <li>
                         <a href="{{url "/assets/mobileapp/?page="}}{{this.rightNav}}">
                             <span aria-hidden="true">&raquo;</span>
-                            <span class="sr-only">Next</span>
+                            <span class="sr-only">下一个</span>
                         </a>
                     </li>
                 {{/if}}
@@ -144,18 +144,18 @@
         <div class="emptyAssets-MsgDiv">
             <i class="icon-inbox largeMsgIcon"></i>
             <br/>
-            Sorry, We could not find any app for your search!
+            对不起，我们找不到任何你要搜索的应用程序！
             <br/>
-            Your search filter was, "{{query}}".
+            你的搜索过滤器是, "{{query}}".
             <br/>
         </div>
     {{else}}
         <div class="emptyAssets-MsgDiv">
             <i class="icon-inbox largeMsgIcon"></i><br/>
-            No mobile applications added yet. <br/>
+            还未添加移动应用。 <br/>
             {{#if mobileAppCreatePermission}}
                 <a type="button" class="btn btn-addNewAssetLarge" href="{{url "/asset/"}}{{shortName}}">
-                    <i class="icon-plus-sign-alt"></i> Add New Mobile App
+                    <i class="icon-plus-sign-alt"></i> 添加新移动应用
                 </a>
             {{/if}}
         </div>
@@ -169,11 +169,11 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"
                         aria-hidden="true">&times;</button>
-                <h4>Get App</h4>
+                <h4>获得应用</h4>
             </div>
             <div class="modal-body">
                 <div class="row offset1" style="padding: 20px">
-                    Download URL : <a href="" name="app-download-url">url</a>
+                    下载的 URL : <a href="" name="app-download-url">url</a>
 
                     <div id="app-download-qrcode"
                          style="width: 200px; padding: 20px; margin-left: 60px;"></div>
@@ -191,7 +191,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     &times;
                 </button>
-                <h4 class="modal-title">Reason for Rejection</h4>
+                <h4 class="modal-title">拒绝理由</h4>
             </div>
             <div class="modal-body">
                 <div class="form-group">
@@ -201,11 +201,11 @@
             </div>
             <div class="modal-footer">
                 <button type="button" name="app-reject-proceed-btn" class="btn btn-danger">
-                    Reject
+                    拒绝
                 </button>
                 <button type="button" name="app-reject-cancel-btn" class="btn btn-default"
                         data-dismiss="modal">
-                    Cancel
+                    取消
                 </button>
             </div>
         </div>
@@ -220,19 +220,19 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     &times;
                 </button>
-                <h4 class="modal-title">permanently delete</h4>
+                <h4 class="modal-title">永久删除</h4>
             </div>
             <div class="modal-body">
-                <p>Are you sure you want to delete 'name' mobile app.</p>
+                <p>你确定要删除'name'移动应用程序吗？</p>
             </div>
             <div class="modal-footer">
                 <button type="button" name="app-delete-confirm-btn" class="btn btn-danger"
                         data-loading-text="<i class='icon-refresh icon-spin'></i> Deleting">
-                    Delete
+                    删除
                 </button>
                 <button type="button" name="app-delete-cancel-btn" class="btn btn-default"
                         data-dismiss="modal">
-                    Cancel
+                    取消
                 </button>
             </div>
         </div>

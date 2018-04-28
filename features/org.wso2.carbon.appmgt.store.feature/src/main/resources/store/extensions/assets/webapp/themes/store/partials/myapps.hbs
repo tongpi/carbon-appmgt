@@ -4,7 +4,7 @@
             <div class="col-xs-6 col-md-4 col-lg-1-5 app-assets-wrapper">
                 {{#compare  attributes.overview_advertiseOnly "true" operator="=="}}
                     <div class="ribbon-wrapper-orange">
-                        <div class="ribbon-orange">Advertised</div>
+                        <div class="ribbon-orange">刊登</div>
                     </div>
                 {{/compare}}
                 <div class="app-assets">
@@ -84,7 +84,7 @@
         {{/each}}
     {{else}}
         <div class="well-large col-md-12 no-apps-box">
-            <i class="fw fw-paste nothing-icon"></i> Sorry, We could not find any app for you
+            <i class="fw fw-paste nothing-icon"></i> 对不起，我们找不到你要的任何应用程序
         </div>
     {{/if}}
 </div>
@@ -98,12 +98,12 @@
             <ul class="pager">
                 {{#if leftNav}}
                     <li>
-                        <a href="{{tenantedUrl "/extensions/assets/webapp/myapps?"}}{{this.urlQuery}}{{t "page="}}{{this.leftNav}}">Previous</a>
+                        <a href="{{tenantedUrl "/extensions/assets/webapp/myapps?"}}{{this.urlQuery}}{{t "page="}}{{this.leftNav}}">前一页</a>
                     </li>
                 {{/if}}
                 {{#if rightNav}}
                     <li>
-                        <a href="{{tenantedUrl "/extensions/assets/webapp/myapps?"}}{{this.urlQuery}}{{t "page="}}{{this.rightNav}}">Next</a>
+                        <a href="{{tenantedUrl "/extensions/assets/webapp/myapps?"}}{{this.urlQuery}}{{t "page="}}{{this.rightNav}}">下一页</a>
                     </li>
                 </ul>
                 {{/if}}

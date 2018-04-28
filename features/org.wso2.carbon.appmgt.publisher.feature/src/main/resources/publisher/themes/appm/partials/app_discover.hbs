@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="pull-left heading" align="left"><h1>Discover Web Applications</h1>
+    <div class="pull-left heading" align="left"><h1>发现Web应用程序</h1>
     </div>
 </div>
 <div class="asset-being-added">
@@ -11,7 +11,7 @@
     <form class="form-horizontal" id='form-asset-discover' role="form" method="post">
         <!--<fieldset>-->
         <div class="form-group">
-            <label class="control-label col-sm-2">Application Server URL: <span class="label-required">*</span></label>
+            <label class="control-label col-sm-2">应用服务器URL: <span class="label-required">*</span></label>
 
             <div class="col-sm-6">
                 <input type='text' id='server-url' name='serverUrl' class="form-control"
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-sm-2">User Name: <span class="label-required">*</span></label>
+            <label class="control-label col-sm-2">用户名: <span class="label-required">*</span></label>
 
             <div class="col-sm-6">
                 <input type='text' id='server-username' name='serverUserName'
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-sm-2">Password: <span class="label-required">*</span></label>
+            <label class="control-label col-sm-2">密码: <span class="label-required">*</span></label>
 
             <div class="col-sm-6">
                 <input type='password' id='server-password' name='serverPassword'
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-sm-2">Context (Starts With): </label>
+            <label class="control-label col-sm-2">上下文（起始）: </label>
 
             <div class="col-sm-6">
                 <input type='text' id='app-name' name='appNameStartsWith'
@@ -43,19 +43,19 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-sm-2">Status:</label>
+            <label class="control-label col-sm-2">状态:</label>
 
             <div class="col-sm-6">
                 <select name="appStatus" id="app-stsatus" class="form-control">
-                    <option name="ALL" value="ALL" {{#ifCond sessionData.appStatus "==" "ALL"}} selected="selected" {{/ifCond}} >ALL</option>
-                    <option name="NEW" value="NEW" {{#ifCond sessionData.appStatus "==" "NEW"}} selected="selected" {{/ifCond}}  >NEW</option>
-                    <option name="CREATED" value="CREATED" {{#ifCond sessionData.appStatus "==" "CREATED"}} selected="selected" {{/ifCond}}  >CREATED</option>
+                    <option name="ALL" value="ALL" {{#ifCond sessionData.appStatus "==" "ALL"}} selected="selected" {{/ifCond}} >全部</option>
+                    <option name="NEW" value="NEW" {{#ifCond sessionData.appStatus "==" "NEW"}} selected="selected" {{/ifCond}}  >新</option>
+                    <option name="CREATED" value="CREATED" {{#ifCond sessionData.appStatus "==" "CREATED"}} selected="selected" {{/ifCond}}  >创建</option>
                 </select>
 
             </div>
         </div>
         <div class="form-horizontal form-group" id="discoverButtons">
-            <button id="btn-discover-asset" class="btn btn-primary pull-left push-15" name="discoverAssetsButton">Discover</button>
+            <button id="btn-discover-asset" class="btn btn-primary pull-left push-15" name="discoverAssetsButton">发现</button>
             <input type="hidden" value="discoverAssets" name="discoveryAction" id="meta-asset-type">
         </div>
     {{#if status}}
@@ -75,22 +75,22 @@
                 <thead>
                 <th></th>
                 <th>
-                    <a href="?sortby=displayName&sort=asc" class="sort-list">Name </a>
+                    <a href="?sortby=displayName&sort=asc" class="sort-list">名称 </a>
                 </th>
                 <th>
-                    <a href="?sortby=version&sort=asc" class="sort-list">Version </a>
+                    <a href="?sortby=version&sort=asc" class="sort-list">版本 </a>
                 </th>
                 <th>
-                    <a href="?sortby=originalContext&sort=asc" class="sort-list">Original Context</a>
+                    <a href="?sortby=originalContext&sort=asc" class="sort-list">原始上下文</a>
                 </th>
                 <th>
-                    <a href="?sortby=applicationType&sort=asc" class="sort-list">Type </a>
+                    <a href="?sortby=applicationType&sort=asc" class="sort-list">类型 </a>
                 </th>
                 <th><a href="#">Status</a></th>
                 <th>
-                    <a href="?sortby=proxyContext&sort=asc" class="sort-list">Proxy Context </a>
+                    <a href="?sortby=proxyContext&sort=asc" class="sort-list">代理上下文 </a>
                 </th>
-                <th><a href="#">Actions</a></th>
+                <th><a href="#">操作</a></th>
                 </thead>
                 <tbody>
             {{#each discoveredArtifacts}}
@@ -100,7 +100,7 @@
                         </td>
                         <td class="asset-listing-name col-md-2">
                             <a href='#'>
-                                {{#if this.name}}{{this.name}}{{else}}&lt; no name given &gt;{{/if}}
+                                {{#if this.name}}{{this.name}}{{else}}&lt; 没有给出名字 &gt;{{/if}}
                             </a>
                         </td>
                         <td>
@@ -136,7 +136,7 @@
             <nav>
                 <ul class="pagination col-sm-12 pull-right push-15">
                     {{#if sessionData.nav.leftNavEnabled}}
-                        <li><a href="{{url "/assets/discover/webapp/?page="}}{{sessionData.nav.leftNav}}"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+                        <li><a href="{{url "/assets/discover/webapp/?page="}}{{sessionData.nav.leftNav}}"><span aria-hidden="true">&laquo;</span><span class="sr-only">前一页</span></a></li>
                     {{/if}}
                     {{#each sessionData.nav.pageIndices}}
                         {{#if this.isDisabled}}
@@ -146,7 +146,7 @@
                         {{/if}}
                     {{/each}}
                     {{#if sessionData.nav.rightNavEnabled}}
-                        <li><a href="{{url "/assets/discover/webapp/?page="}}{{sessionData.nav.rightNav}}"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+                        <li><a href="{{url "/assets/discover/webapp/?page="}}{{sessionData.nav.rightNav}}"><span aria-hidden="true">&raquo;</span><span class="sr-only">下一页</span></a></li>
                     {{/if}}
                 </ul>
             </nav>
@@ -157,7 +157,7 @@
         <div class="emptyAssets-MsgDiv">
             <i class="icon-inbox largeMsgIcon"></i>
             <br />
-            No web applications discovered.
+            没有发现Web应用程序。
 
         </div>
     {{/if}}

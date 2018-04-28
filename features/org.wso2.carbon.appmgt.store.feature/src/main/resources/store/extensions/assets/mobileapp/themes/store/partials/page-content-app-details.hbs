@@ -32,9 +32,9 @@
                     <h4>{{asset.attributes.overview_displayName}}</h4>
 
                     <p>
-                        Version : {{ asset.attributes.overview_version}}<br>
-                        By : {{asset.attributes.overview_provider}}<br>
-                        Type : {{asset.attributes.overview_type}}
+                        版本 : {{ asset.attributes.overview_version}}<br>
+                        按 : {{asset.attributes.overview_provider}}<br>
+                        类型 : {{asset.attributes.overview_type}}
                     </p>
 
                     <span class="rating">
@@ -48,11 +48,11 @@
                                     <a id="btn-add-gadget" href="#" data-app="{{asset.id}}"
                                        data-platform="{{asset.attributes.overview_platform}}" data-toggle="modal"
                                        data-target="#modalInstallApp"
-                                       class="btn btn-default"><i class="fw fw-refresh"></i>Re-Install</a>
+                                       class="btn btn-default"><i class="fw fw-refresh"></i>重新设置</a>
                                 {{else}}
                                     <a id="btn-add-gadget-install" href="#" data-app="{{asset.id}}"
                                        data-platform="{{asset.attributes.overview_platform}}"
-                                       class="btn btn-default"><i class="fw fw-refresh"></i>Re-Install</a>
+                                       class="btn btn-default"><i class="fw fw-refresh"></i>重新设置</a>
                                 {{/if}}
                             {{!--Check if already subscribed to previous version of the app--}}
                             {{else}} {{#if isUpdatedApp}}
@@ -60,33 +60,33 @@
                                     <a id="btn-add-gadget-update" href="#" data-app="{{asset.id}}"
                                        data-platform="{{asset.attributes.overview_platform}}" data-toggle="modal"
                                        data-target="#modalUpdateApp"
-                                       class="btn btn-default"><i class="fw fw-refresh"></i>Update</a>
+                                       class="btn btn-default"><i class="fw fw-refresh"></i>更新</a>
                                 {{else}}
                                     <a id="btn-add-gadget-install" href="#" data-app="{{asset.id}}"
                                        data-platform="{{asset.attributes.overview_platform}}"
-                                       class="btn btn-default"><i class="fw fw-refresh"></i>Update</a>
+                                       class="btn btn-default"><i class="fw fw-refresh"></i>更新</a>
                                 {{/if}}
                             {{else}}
                                 {{#if isDeviceSubscriptionEnabled}}
                                     <a id="btn-add-gadget" href="#" data-app="{{asset.id}}"
                                        data-platform="{{asset.attributes.overview_platform}}" data-toggle="modal"
                                        data-target="#modalInstallApp"
-                                       class="btn btn-subscribe"> <i class="fw fw-mobile"></i>Install</a>
+                                       class="btn btn-subscribe"> <i class="fw fw-mobile"></i>安装</a>
                                 {{else}}
                                     <a id="btn-add-gadget-install" href="#" data-app="{{asset.id}}"
                                        data-platform="{{asset.attributes.overview_platform}}"
-                                       class="btn btn-subscribe"> <i class="fw fw-mobile"></i>Install</a>
+                                       class="btn btn-subscribe"> <i class="fw fw-mobile"></i>安装</a>
                                 {{/if}}
                             {{/if}}{{/if}}
                         {{else}}
                             <a id="btn-add-gadget-install" href="{{tenantedUrl "/login"}}"
-                               class="btn btn-subscribe"> <i class="fw fw-mobile"></i>Install</a>
+                               class="btn btn-subscribe"> <i class="fw fw-mobile"></i>安装</a>
                         {{/if}}
 
                         {{#if isEnterpriseInstallEnabled}}
                             <a href="#" id="btn-ent-install" data-aid="{{asset.id}}" data-toggle="modal"
                                data-target="#modalEnterpriseInstall"
-                               class="btn btn-subscribe"><i class="fw fw-enterprise"></i>Ent. Install</a>
+                               class="btn btn-subscribe"><i class="fw fw-enterprise"></i>企业安装</a>
                             <input id="isEnterpriseInstallEnabled" type="hidden" value="true">
                         {{/if}}
                     </div>
@@ -97,19 +97,19 @@
     {{!--tabs--}}
     <div class="app-details-tabs row">
         <ul class="nav nav-tabs add-margin-top-5x">
-            <li class="active"><a data-toggle="tab" href="#menu1">Overview</a></li>
-            <li><a data-toggle="tab" href="#menu2">Screenshots</a></li>
-            <li><a data-toggle="tab" href="#menu3">User Reviews</a></li>
+            <li class="active"><a data-toggle="tab" href="#menu1">概述</a></li>
+            <li><a data-toggle="tab" href="#menu2">屏幕快照</a></li>
+            <li><a data-toggle="tab" href="#menu3">用户评论</a></li>
         </ul>
         {{!--tab contents--}}
         <div class="tab-content">
             {{!--overview tab content--}}
             <div id="menu1" class="tab-pane fade in active">
-                <h3>Description</h3>
+                <h3>描述</h3>
 
                 <p>{{#if asset.attributes.overview_displayName}}{{ asset.attributes.overview_description}}{{/if}}</p>
                 {{#compare asset.attributes.overview_recentchanges "-" operator="!="}}
-                    <h3>Recent Changes</h3>
+                    <h3>最近的变化</h3>
 
                     <p>{{ asset.attributes.overview_recentchanges}}</p>
                 {{/compare}}
@@ -149,7 +149,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Schedule Update</h4>
+                <h4 class="modal-title">计划更新</h4>
             </div>
             <div class="modal-body">
                 <br><br>
@@ -157,20 +157,20 @@
                     <input id="instant-update" type="checkbox" class="form-control operationDataKeys"
                            data-key="instant-update"/>
                     <span class="helper" title="Once enabled, application update will start instantly.">
-              &nbsp;&nbsp;&nbsp;Instant Update
+              &nbsp;&nbsp;&nbsp;立即更新
               <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
           </span>
                 </label>
                 <br><br>
                 <div class='input-group date' id='dateTimePicker-update'>
-                    Enter the date and time to schedule application update.
+                    输入安排应用程序更新的日期和时间。
                     <br><br>
                     <div id="firmware-error-msg" class="alert alert-danger hidden" role="alert">
                         <i class="icon fw fw-error"></i><span></span>
                     </div>
                     <input type='text' class="form-control modal-input operationDataKeys" style="z-index : 900;"
                            name="daterange-update" id="schedule-update" data-key="schedule-update"/>
-                    Date and time in the format of 04-30-2016 12:00 am
+                    日期和时间格式为04-30-2016 12:00 am
                 </div>
                 <script type="text/javascript">
                     $(function () {
@@ -197,13 +197,13 @@
                 </script>
                 <br>
                 <br><br>
-                Do you want to perform this operation?
+                你想执行这个操作吗？
                 <br>
                 <div class="modal-footer">
                     <a id="btn-schduled-update" href="#" data-app="{{asset.id}}"
                        data-platform="{{asset.attributes.overview_platform}}" data-toggle="modal"
-                       class="btn btn-primary">Yes</a>
-                    <a class="btn btn-danger" data-dismiss="modal">No</a>
+                       class="btn btn-primary">是</a>
+                    <a class="btn btn-danger" data-dismiss="modal">否</a>
                 </div>
             </div>
         </div>
@@ -218,7 +218,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Schedule Install</h4>
+                <h4 class="modal-title">计划安装</h4>
             </div>
             <div class="modal-body">
                 <br><br>
@@ -226,20 +226,20 @@
                     <input id="instant-install" type="checkbox" class="form-control operationDataKeys"
                            data-key="instant-install"/>
                     <span class="helper" title="Once enabled, application install will start instantly.">
-           &nbsp;&nbsp;&nbsp;Instant install
+           &nbsp;&nbsp;&nbsp;立即安装
              <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
             </span>
                 </label>
                 <br><br>
                 <div class='input-group date' id='dateTimePicker-install'>
-                    Enter the date and time to schedule application installation.
+                    输入安排应用程序安装的日期和时间。
                     <br><br>
                     <div id="firmware-error-msg" class="alert alert-danger hidden" role="alert">
                         <i class="icon fw fw-error"></i><span></span>
                     </div>
                     <input type='text' class="form-control modal-input operationDataKeys" style="z-index : 900;"
                            name="daterange-install" id="schedule-install" data-key="schedule-install"/>
-                    Date and time in the format of 04-30-2016 12:00 am
+                    日期和时间格式为04-30-2016 12:00 am
                 </div>
                 <script type="text/javascript">
                     $(function () {
@@ -266,13 +266,13 @@
                 </script>
                 <br>
                 <br><br>
-                Do you want to perform this operation?
+                你想执行这个操作吗？
                 <br>
                 <div class="modal-footer">
                     <a id="btn-schduled-install" href="#" data-app="{{asset.id}}"
                        data-platform="{{asset.attributes.overview_platform}}" data-toggle="modal"
-                       class="btn btn-primary">Yes</a>
-                    <a class="btn btn-danger" data-dismiss="modal">No</a>
+                       class="btn btn-primary">是</a>
+                    <a class="btn btn-danger" data-dismiss="modal">否</a>
                 </div>
             </div>
         </div>
@@ -287,7 +287,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Install {{ asset.attributes.overview_displayName}}</h4>
+                <h4 class="modal-title">安装 {{ asset.attributes.overview_displayName}}</h4>
             </div>
             <div class="modal-body">
 
@@ -299,8 +299,8 @@
 
                             </div>
                             <ul class="pager">
-                                <li><a data-slide="prev" href="#media">Prev</a></li>
-                                <li><a data-slide="next" href="#media">Next</a></li>
+                                <li><a data-slide="prev" href="#media">前一页</a></li>
+                                <li><a data-slide="next" href="#media">下一页</a></li>
                             </ul>
                         </div>
                     </div>
@@ -320,22 +320,22 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Enterprise Install</h4>
+                <h4 class="modal-title">企业安装</h4>
             </div>
             <div class="modal-body">
 
                 <ul class="nav nav-tabs" id="ent-install-tabs">
-                    <li class="active"><a data-toggle="tab" data-name="roles" href="#ent-roles">Roles</a></li>
-                    <li><a data-toggle="tab" data-name="users" href="#ent-users">Users</a></li>
+                    <li class="active"><a data-toggle="tab" data-name="roles" href="#ent-roles">角色</a></li>
+                    <li><a data-toggle="tab" data-name="users" href="#ent-users">用户</a></li>
                 </ul>
                 <div class="tab-content">
                     <div id="ent-roles" class="tab-pane fade in active ">
-                        <div class="form-inline pull-left" style="padding:2px"><label>Search: &nbsp;</label><input id="roleId" type="text" style="margin-right:5px"></div>
+                        <div class="form-inline pull-left" style="padding:2px"><label>搜索: &nbsp;</label><input id="roleId" type="text" style="margin-right:5px"></div>
                         <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered "
                                id="roles-table">
                             <thead>
                             <tr>
-                                <th>Role name</th>
+                                <th>角色名称</th>
                                 <th>#</th>
                             </tr>
                             </thead>
@@ -343,12 +343,12 @@
                         </table>
                     </div>
                     <div id="ent-users" class="tab-pane fade">
-                        <div class="form-inline pull-left" style="padding:2px"><label>Search: &nbsp;</label><input id="userId" type="text" style="margin-right:5px"></div>
+                        <div class="form-inline pull-left" style="padding:2px"><label>搜索: &nbsp;</label><input id="userId" type="text" style="margin-right:5px"></div>
                         <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered"
                                id="users-table">
                             <thead>
                             <tr>
-                                <th>User name</th>
+                                <th>用户名称</th>
                                 <th>#</th>
                             </tr>
                             </thead>
@@ -361,8 +361,8 @@
             </div>
             <div class="modal-footer">
                 <div>
-                    <button id="btn-apps-ent-install" class="btn btn-primary">Install</button>
-                    <button id="btn-apps-ent-uninstall" class="btn btn-danger">Uninstall</button>
+                    <button id="btn-apps-ent-install" class="btn btn-primary">安装</button>
+                    <button id="btn-apps-ent-uninstall" class="btn btn-danger">卸载</button>
                 </div>
             </div>
         </div><!-- /.modal-content -->

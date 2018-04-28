@@ -15,15 +15,15 @@
             <div class="input-group input-wrap search-wrap">
                 <input type="hidden" value="{{tenantedUrl searchUrl}}" id="searchUrl">
                 <input type="text" id="searchTxt" value="{{searchQuery.search}}" class="search-field form-control"
-                       placeholder="Search for apps" />
+                       placeholder="搜索应用" />
 
                 <div class="input-group-btn">
                     <button type="button" class="btn search-by" data-toggle="collapse"
                             data-target="#searchPane">
-                        {{#compare "overview_platform" searchQuery.searchTerm}}By Platform{{/compare}}
-                        {{#compare "overview_category" searchQuery.searchTerm}}By Category{{/compare}}
-                        {{#compare "overview_provider" searchQuery.searchTerm}}By Provider{{/compare}}
-                        {{#compare "overview_name" searchQuery.searchTerm}}By Name{{/compare}}
+                        {{#compare "overview_platform" searchQuery.searchTerm}}按平台{{/compare}}
+                        {{#compare "overview_category" searchQuery.searchTerm}}按类别{{/compare}}
+                        {{#compare "overview_provider" searchQuery.searchTerm}}按供应商{{/compare}}
+                        {{#compare "overview_name" searchQuery.searchTerm}}按名称{{/compare}}
                         <span class="caret"></span>
                     </button>
                     <button type="button" class="btn" id="searchBtn">
@@ -39,7 +39,7 @@
                                 <label>
                                     <input type="radio" name="optionsRadios" value="Name"
                                            {{#compare "overview_name" searchQuery.searchTerm}}checked{{/compare}} />
-                                    By Name
+                                    按名称
                                 </label>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                                 <label>
                                     <input type="radio" name="optionsRadios" value="Provider"
                                            {{#compare "overview_provider" searchQuery.searchTerm}}checked{{/compare}} />
-                                    By Provider
+                                    按供应商
                                 </label>
                             </div>
                         </div>
@@ -61,12 +61,12 @@
                                 <label>
                                     <input type="radio" name="optionsRadios" value="Category"
                                            {{#compare "overview_category" searchQuery.searchTerm}}checked{{/compare}} />
-                                    By Category
+                                    按类别
                                 </label>
                             </div>
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 remove-padding-left">
-                            <select id="category-select" class="form-control" title="Choose a category">
+                            <select id="category-select" class="form-control" title="选择一个类别">
                                 {{#each categories}}
                                     <option {{#compare ../selectedCategory this}}selected{{/compare}}>{{this}}</option>
                                 {{/each}}
@@ -79,7 +79,7 @@
                                 <label>
                                     <input type="radio" name="optionsRadios" value="Platform"
                                            {{#compare "overview_platform" searchQuery.searchTerm}}checked{{/compare}} />
-                                    By Platform
+                                    按平台
                                 </label>
                             </div>
                         </div>

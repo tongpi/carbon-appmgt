@@ -3,11 +3,11 @@
         <ul class="nav nav-pills pull-left">
             <li class="dropdown closed">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
-                    Mobile Applications <span class="caret"></span></a>
+                    移动应用 <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li {{#ifCond active "==" "list-assets"}}class="active"{{/ifCond}}><a href="{{url "/assets/mobileapp/"}}">All Mobile Applications</a></li>
+                    <li {{#ifCond active "==" "list-assets"}}class="active"{{/ifCond}}><a href="{{url "/assets/mobileapp/"}}">所有移动应用</a></li>
                     {{#if createMobileAppPerm}}
-                        <li {{#ifCond active "==" "add-mobileapp"}}class="active"{{/ifCond}}><a href="{{url "/asset/mobileapp"}}"> Add New Mobile Application</a></li>
+                        <li {{#ifCond active "==" "add-mobileapp"}}class="active"{{/ifCond}}><a href="{{url "/asset/mobileapp"}}"> 添加新移动应用</a></li>
                     {{/if}}
                 </ul>
             </li>
@@ -30,7 +30,7 @@
     <div class="col-md-3 col-sm-12 col-xs-12">
         <div class="">
             <div class="input-group">
-                <input class="form-control" type="text" id="inp_searchAsset" placeholder="{{t "Search Mobile Applications.."}}" value="{{query}}">
+                <input class="form-control" type="text" id="inp_searchAsset" placeholder="{{t "搜索移动应用.."}}" value="{{query}}">
                 <div class="input-group-addon mobile-search-fix"><a class="" id="search-button"> <i class="icon-search"></i> </a> </div>
                 <input type="hidden" id="search-prefix" value="{{shortName}}"/>
             </div>
@@ -44,12 +44,12 @@
 	<div class="modal-body">
 		<div class="modal-loading"></div>
 		<p>
-			Redirecting you to the new Asset Version...
+			将您重定向到新的asset版本...
 		</p>
 	</div>
 	<div class="modal-footer">
 		<button class="btn btn-primary">
-			Redirect now
+			现在重定向
 		</button>
 	</div>
 </div>

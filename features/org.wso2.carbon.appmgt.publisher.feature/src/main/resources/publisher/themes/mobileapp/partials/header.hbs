@@ -2,7 +2,7 @@
     <div class="container">
         <div class="navbar-header">
             <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">切换导航</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -21,25 +21,23 @@
                     {{/compare}}
                     {{#compare this "mobileapp" operator="=="}}
                         <li class="active">
-                            <a href="{{url "/assets/mobileapp/"}}"><i class="icon-mobile-phone"></i> Mobile Applications</a>
+                            <a href="{{url "/assets/mobileapp/"}}"><i class="icon-mobile-phone"></i> 移动应用</a>
                         </li>
                     {{else}}
                     {{/compare}}
                 {{/each}}
                 <li>
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i>
+                    <span style="color:#a3abbe; padding:13px 0px 13px 20px; line-height:60px;"><i class="icon-user"></i> 欢迎您，
                         {{#ifCond cuser.tenantDomain "==" "carbon.super"}}
                             {{cuser.username}}
                         {{else}}
                             {{cuser.username}}@{{cuser.tenantDomain}}
-                        {{/ifCond}}
-                        <b class="caret"></b></a>
-                    <ul class="dropdown-menu dropdown-account" role="menu" aria-labelledby="dLabel">
-                            <li>
-                                <a onclick="window.location.href='{{url "/logout"}}'" href="#"><i class="icon-signout"></i>{{t "Sign out"}}</a>
-                            </li>
-                    </ul>
+                        {{/ifCond}}！
+                     </span>
                 </li>
+                <li>
+                                <a onclick="window.location.href='{{url "/logout"}}'" href="#"><img src="/publisher/themes/mobileapp/img/icon_logout.png" /></a>
+                            </li>
             </ul>
         </div>
     </div>

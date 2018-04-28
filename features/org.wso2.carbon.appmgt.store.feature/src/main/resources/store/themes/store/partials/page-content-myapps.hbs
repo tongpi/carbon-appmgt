@@ -55,7 +55,7 @@
                                         <a href="#" id="rmv-{{id}}" data-name="{{attributes.overview_name}}"
                                            data-provider="{{attributes.overview_provider}}"
                                            data-version="{{attributes.overview_version}}" class="remove-from-fav">
-                                            Remove from Favorites
+                                            从收藏夹移除
                                         </a>
                                     </li>
                                     <li id="listItemAddFavorite-{{id}}" {{#if isFavourite}}
@@ -63,18 +63,18 @@
                                         <a href="#" id="add-{{id}}" data-name="{{attributes.overview_name}}"
                                            data-provider="{{attributes.overview_provider}}"
                                            data-version="{{attributes.overview_version}}" class="add-to-fav">
-                                            Add to Favorites
+                                            添加到收藏夹
                                         </a>
                                     </li>
                                 {{/if}}
                                 {{#ifCond attributes.overview_advertiseOnly "==" "true"}}
                                     <li>
                                         <a href="{{url "/t"}}/{{attributes.overview_appTenant}}/assets/{{../../../assetType}}/{{attributes.overview_advertisedAppUuid}}">
-                                            More Details
+                                            更多详情
                                         </a>
                                     </li>
                                 {{else}}
-                                    <li><a href="{{tenantedUrl "/assets/"}}{{../../../assetType}}/{{id}}">More Details</a>
+                                    <li><a href="{{tenantedUrl "/assets/"}}{{../../../assetType}}/{{id}}">更多详情</a>
                                     </li>
                                 {{/ifCond}}
                                 {{#if ../../user}}
@@ -134,7 +134,7 @@
                                         <a href="#" id="rmv-{{id}}" data-name="{{attributes.overview_name}}"
                                            data-provider="{{attributes.overview_provider}}"
                                            data-version="{{attributes.overview_version}}" class="remove-from-fav">
-                                            Remove from Favorites
+                                            从收藏夹移除
                                         </a>
                                     </li>
                                     <li id="listItemAddFavorite-{{id}}" {{#if isFavourite}}
@@ -142,7 +142,7 @@
                                         <a href="#" id="add-{{id}}" data-name="{{attributes.overview_name}}"
                                            data-provider="{{attributes.overview_provider}}"
                                            data-version="{{attributes.overview_version}}" class="add-to-fav">
-                                            Add to Favorites
+                                            添加到收藏夹
                                         </a>
                                     </li>
 

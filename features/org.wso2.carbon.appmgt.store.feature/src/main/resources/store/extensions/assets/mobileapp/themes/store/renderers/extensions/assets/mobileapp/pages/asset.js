@@ -53,7 +53,7 @@ var render = function(theme, data, meta, require) {
             {
                 partial: 'page-header',
                 context: {
-                    title: "Mobile App",
+                    title: "移动应用",
                     sorting: null
                 }
             }

@@ -2,13 +2,13 @@
 
 {{#unless isLogged}}
 <div class="com-guest">
-	Please Sign in to add a Review
+	请登录添加评论
 </div>
 {{/unless}}
 {{#if isLogged}}
     {{#unless isAuthorized}}
     <div class="com-guest">
-        Please Register in "{{urlDomain}}" domain to add a Review
+        请在"{{urlDomain}}"域中注册以添加评论
     </div>
     {{/unless}}
 {{/if}}
@@ -18,13 +18,13 @@
 	<div class="row com-sort {{#unless reviews}}com-sort-hidden{{/unless}}">
 		<ul>
 			<li>
-				<a href="#" id="newest">Newest</a>
+				<a href="#" id="newest">最新</a>
 			</li>
 			<li>
-				<a href="#" id="oldest">Oldest</a>
+				<a href="#" id="oldest">最老</a>
 			</li>
 			<li>
-				<a href="#" class="selected" id="popular">Popular</a>
+				<a href="#" class="selected" id="popular">流行</a>
 			</li>
 		</ul>
 	</div>
@@ -36,14 +36,14 @@
 			{{/each}}
 		{{else}}
 			<p class="com-first-review">
-				Be the first one to review!
+				成为第一个评论！
 			</p>
 		{{/if}}
 	</div>
 	{{#if more}}
 		<div id="more">
 			<p class="load-more" value="{{offset}}">
-			<a href="#" >More</a>
+			<a href="#" >更多</a>
 			</p>
 		</div>
 	{{/if}}

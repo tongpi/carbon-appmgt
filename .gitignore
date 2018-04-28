@@ -229,11 +229,27 @@ pip-log.txt
 #Ignore Targets
 target/
 
+<<<<<<< HEAD
 #####################
 ## Visual Studio Code
 #####################
 .vscode/
 
+=======
+
+
+
+#################
+## Visual Studio
+#################
+.vscode/
+
+
+
+
+
+
+>>>>>>> yzk_locale_v1.2.51
 #############
 ## Appmgt
 #############
@@ -249,3 +265,97 @@ components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs
 components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/APPDocumentApi.html
 
 components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/AppDocumentApi.html
+
+
+
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/index.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/App.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/AppList.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/AppSummary.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/App_appmeta.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/Binary.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/BusinessOwner.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/BusinessOwnerList.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/BusinessOwnerProperties.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/CustomProperty.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/Document.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/DocumentList.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/Error.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/ErrorListItem.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/JavaPolicy.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/JavaPolicyList.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/LifeCycle.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/LifeCycleHistory.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/LifeCycleHistoryList.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/PList.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/PListAssets.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/PListInfo.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/PolicyGroups.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/PolicyPartial.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/PolicyPartialInfo.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/PolicyPartialList.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/ResponseMessage.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/RoleIdList.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/StatSummary.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/StaticContent.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/TagList.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/Tier.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/TierList.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/UriTemplate.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/UserIdList.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/AppApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/AppDocumentsApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/AppsApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/BusinessOwnerApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/JavaPoliciesApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/LifecycleApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/MobileAppsApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/RolesApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/StatsApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/TagsApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/TiersApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/operations/XACMLPoliciesApi.html
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/package.json
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/index.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/AdminInstall.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/App.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/AppIdList.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/AppList.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/AppRatingInfo.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/AppRatingList.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/AppSummary.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/BusinessOwner.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/BusinessOwnerProperties.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/CustomProperty.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/DeviceInfo.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/DeviceList.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/Document.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/DocumentList.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/Error.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/ErrorListItem.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/Events.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/FavouritePage.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/Install.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/RoleIdList.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/Schedule.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/TagList.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/UserIdList.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/AppDocumentsApi.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/AppsApi.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/BusinessOwnerApi.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/DevicesApi.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/FavouriteApi.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/MobileAppsApi.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/RolesApi.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/SubscriptionsApi.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/TagsApi.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/operations/UsersApi.html
+components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/package.json
+components/org.wso2.carbon.appmgt.rest.api.publisher/src/main/resources/api-docs/docs/models/StatSummary_result.html        components/org.wso2.carbon.appmgt.rest.api.store/src/main/resources/api-docs/docs/models/Events_events.html
+
+
+
+
+
+
+
