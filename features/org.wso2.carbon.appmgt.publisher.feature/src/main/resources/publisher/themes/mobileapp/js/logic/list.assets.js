@@ -214,8 +214,8 @@ $(document).ready(function () {
         var appName = thisButton.data('name');
 
         var appDeleteConfirmModal = $('#app-delete-confirm-modal');
-        var message = "Are you sure you want to delete '" + appName + "' mobile app?"
-                      + "<br /> This action cannot be undo.";
+        var message = "你确定你想要删除 '" + appName + "' 移动应用?"
+                      + "<br /> 此操作无法撤消。";
         appDeleteConfirmModal.find('.modal-body').find('p').html(message);
         var appDeleteConfirmButton = appDeleteConfirmModal.find('[name="app-delete-confirm-btn"]');
         var appDeleteCancelButton = appDeleteConfirmModal.find('[name="app-delete-cancel-btn"]');

@@ -33,7 +33,7 @@ $("#txtName").change(function() {
         success: function (data) {
             if(data.isExist){
                 $("#name_is_ok").css("color", "#ffa500");
-                $("#name_is_ok").text("App name with version " + data.versions +  " already exists.");
+                $("#name_is_ok").text("应用名称版本 " + data.versions +  " 已经存在.");
                 $("#name_is_ok").removeClass("icon-ok");
                 $("#name_is_ok").css("padding-left", "15px");
                 $("#name_is_ok").attr("title", "Mobile app name already exists");
@@ -100,9 +100,9 @@ $('#txtMarket').on("change",function() {
 	  }
 
 	   if($('#txtOS').val() == 'android'){
-	   		$('#file-upload-text').text('SELECT .APK FILE');
+	   		$('#file-upload-text').text('选择 .APK 文件');
 	   }else if($('#txtOS').val() == 'android'){
-	   		$('#file-upload-text').text('SELECT .PLIST FILE');
+	   		$('#file-upload-text').text('选择 .PLIST 文件');
 	   }
 });
 
@@ -207,7 +207,7 @@ $(document).ready(function(){
                		//window.location.replace("caramel.context +/assets/mobileapp/");
 
                		 noty({
-					    text: '<strong>Validation Failed!</strong> <br />' + validationErrors,
+					    text: '<strong>验证失败!</strong> <br />' + validationErrors,
 					    template: '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
 					    layout: "center",
 					    timeout: 2000,
@@ -259,7 +259,7 @@ $(document).ready(function(){
 
 
                 noty({
-                    text: '<strong>Validation Failed!</strong> <br />' + validationErrors,
+                    text: '<strong>验证失败!</strong> <br />' + validationErrors,
                     template: '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
                     layout: "center",
                     modal: true,
@@ -308,7 +308,7 @@ $('#btn-app-upload').click(function () {
 
     if(($('#txtOS').val() != 'webapp' && $('#txtMarket').val() == 'public') && $('#txtPackagename').val() === ""){
         noty({
-            text: 'Please enter a correct value as Package Name or App Identifier',
+            text: '请输入正确的值作为包名称或应用程序标识符',
             template: '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
             layout: "center",
             modal: true,
@@ -317,7 +317,7 @@ $('#btn-app-upload').click(function () {
                 {
 
                     addClass: 'btn btn-default',
-                    text: 'Ok',
+                    text: '好',
                     onClick: function ($noty) {
                         $noty.close();
                     }
@@ -331,7 +331,7 @@ $('#btn-app-upload').click(function () {
 
     if($('#txtOS').val() == 'webapp'  && $('#txtWebapp').val() === ""){
         noty({
-            text: 'Please enter a correct value as web app URL',
+            text: '请输入正确的值作为web app URL',
             template: '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
             layout: "center",
             modal: true,
@@ -340,7 +340,7 @@ $('#btn-app-upload').click(function () {
                 {
 
                     addClass: 'btn btn-default',
-                    text: 'Ok',
+                    text: '好',
                     onClick: function ($noty) {
                         $noty.close();
                     }

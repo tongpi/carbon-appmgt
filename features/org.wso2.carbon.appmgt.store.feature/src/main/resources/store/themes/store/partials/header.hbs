@@ -26,18 +26,18 @@
                     {{#if sso}}
                         <a href="{{tenantedUrl "/login?header=true"}}" class="header-action" style="color:#a3abbe;">
                             <span class="icon"><i class="glyphicon glyphicon-off add-padding-right-1x"></i></span>
-                            <span class="text-uppercase">{{t "Sign In"}}</span>
+                            <span class="text-uppercase">{{t "登录"}}</span>
                         </a>
                     {{else}}
                         <a href="#" class="header-action" data-toggle="modal" data-target="#modal-login" style="color:#a3abbe;">
                             <span class="icon"><i class="glyphicon glyphicon-off add-padding-right-1x"></i></span>
-                            <span class="text-uppercase">{{t "Sign In"}}</span>
+                            <span class="text-uppercase">{{t "登录"}}</span>
                         </a>
                     {{/if}}
                     {{#if isSelfSignUpEnabledForTenant}}
                         <a href="#" class="header-action" data-toggle="modal" data-target="#register-modal">
                             <span class="icon"><i class="fw fw-sign-up add-padding-right-1x"></i></span>
-                            <span class="text-uppercase">注册</span>
+                            <span class="text-uppercase">登录</span>
                         </a>
                         {{>register}}
                     {{/if}}

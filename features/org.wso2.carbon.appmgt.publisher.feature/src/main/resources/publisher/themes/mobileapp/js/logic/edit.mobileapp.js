@@ -45,16 +45,16 @@ $('#txtOS').on("change",function() {
 
 	  
 	   if($('#txtOS').val() == 'android'){
-	   		$('#txtNameLabel').text('Package Name');
+	   		$('#txtNameLabel').text('包名');
 		   	if($('#txtMarket').val() == "VPP"){
 		   		$('#txtMarket').val('Market');
 		   	}
-	   		$('#file-upload-text').html('<i class="icon-plus-sign"></i> SELECT .APK FILE');
+	   		$('#file-upload-text').html('<i class="icon-plus-sign"></i> 选择 .APK 文件');
 	   		$('#txtMarket').children('option[value="VPP"]').css('display','none');
 	   		
 	   }else if($('#txtOS').val() == 'ios'){
-	   		$('#txtNameLabel').text('App Identifier');
-	   		$('#file-upload-text').html('<i class="icon-plus-sign"></i> SELECT .IPA FILE');
+	   		$('#txtNameLabel').text('应用标识符');
+	   		$('#file-upload-text').html('<i class="icon-plus-sign"></i> 选择 .IPA 文件');
 	   		$('#txtMarket').children('option[value="VPP"]').css('display','block');   		
 	   }
 	  
@@ -72,9 +72,9 @@ $('#txtMarket').on("change",function() {
 	  }
 	  
 	   if($('#txtOS').val() == 'android'){
-	   		$('#file-upload-text').txt('SELECT .APK FILE');
+	   		$('#file-upload-text').txt('选择 .APK 文件');
 	   }else if($('#txtOS').val() == 'android'){
-	   		$('#file-upload-text').txt('SELECT .PLIST FILE');
+	   		$('#file-upload-text').txt('选择 .PLIST 文件');
 	   }
 });
 
@@ -106,7 +106,7 @@ $('#txtMarket').on("change",function() {
 					}
                		
                		 noty({               		 	
-					    text: '<strong>Validation Failed!</strong> <br />' + validationErrors,
+					    text: '<strong>验证失败!</strong> <br />' + validationErrors,
 					    template: '<div class="noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
 					    layout: "center",
 					    timeout: 2000,
