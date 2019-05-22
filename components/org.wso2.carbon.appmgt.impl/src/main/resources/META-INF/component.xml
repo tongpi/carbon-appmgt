@@ -1,43 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <component xmlns="http://products.wso2.org/carbon">
     <ManagementPermissions>
         <ManagementPermission>
-            <DisplayName>Web App</DisplayName>
+            <DisplayName>Web 应用</DisplayName>
             <ResourceId>/permission/admin/manage/webapp</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Create</DisplayName>
+            <DisplayName>创建</DisplayName>
             <ResourceId>/permission/admin/manage/webapp/create</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Publish</DisplayName>
+            <DisplayName>发布</DisplayName>
             <ResourceId>/permission/admin/manage/webapp/publish</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Subscribe</DisplayName>
+            <DisplayName>订阅</DisplayName>
             <ResourceId>/permission/admin/manage/webapp/subscribe</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Update</DisplayName>
+            <DisplayName>更新</DisplayName>
             <ResourceId>/permission/admin/manage/webapp/update</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Delete</DisplayName>
+            <DisplayName>删除</DisplayName>
             <ResourceId>/permission/admin/manage/webapp/delete</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Mobile App</DisplayName>
+            <DisplayName>移动应用</DisplayName>
             <ResourceId>/permission/admin/manage/mobileapp</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Create</DisplayName>
+            <DisplayName>创建</DisplayName>
             <ResourceId>/permission/admin/manage/mobileapp/create</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Update</DisplayName>
+            <DisplayName>更新</DisplayName>
             <ResourceId>/permission/admin/manage/mobileapp/update</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Publish</DisplayName>
+            <DisplayName>发布</DisplayName>
             <ResourceId>/permission/admin/manage/mobileapp/publish</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
@@ -45,7 +46,7 @@
             <ResourceId>/permission/admin/manage/mobileapp/delete</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Install</DisplayName>
+            <DisplayName>安装</DisplayName>
             <ResourceId>/permission/admin/manage/mobileapp/install</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
@@ -53,11 +54,11 @@
             <ResourceId>/permission/admin/manage/document</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Add</DisplayName>
+            <DisplayName>添加</DisplayName>
             <ResourceId>/permission/admin/manage/document/add</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Edit</DisplayName>
+            <DisplayName>编辑</DisplayName>
             <ResourceId>/permission/admin/manage/document/edit</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
@@ -65,19 +66,19 @@
             <ResourceId>/permission/admin/manage/document/delete</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>APPM Admin</DisplayName>
+            <DisplayName>APPM 管理</DisplayName>
             <ResourceId>/permission/admin/manage/appm</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>Manage Tiers</DisplayName>
+            <DisplayName>管理层级</DisplayName>
             <ResourceId>/permission/admin/manage/appm/manage_tiers</ResourceId>
         </ManagementPermission>
 	    <ManagementPermission>
-            <DisplayName>Manage Workflows</DisplayName>
+            <DisplayName>管理工作流</DisplayName>
             <ResourceId>/permission/admin/manage/appm/workflowadmin</ResourceId>
         </ManagementPermission>
         <ManagementPermission>
-            <DisplayName>View Statistics</DisplayName>
+            <DisplayName>查看统计</DisplayName>
             <ResourceId>/permission/admin/manage/appm/view_stats</ResourceId>
         </ManagementPermission>
     </ManagementPermissions>
